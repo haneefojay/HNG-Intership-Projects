@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="root">
+            <div class="container">
+                <div class="main">
+                    <section class="info">
+                        <div class="basic-info">
+                            <img class="profile-image" src="images\Personal-Photo.jpg" data-testid="profilePicture"/>                    
+                            <h1 class="myName" data-testid="fullName">Ojutalayo Haneef</h1>
+                            <h3 class="myRole" data-testid="jobTitle">Junior Frontend Developer</h3>
+                            <div class="locate">
+                                <img src="images\map-solid-24.png" alt="map icon" class="map-img">
+                                <p id="location" data-testid="currentLocation"></p>
+                                <p id="utc-time" data-testid="currentTimeUTC"></p>
+                            </div>
+                            <div class="info-button">
+                                <button id="email-button" data-testid="emailAddress"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAKCAYAAABv7tTEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADGSURBVHgBlZDRDYJAEER3DgrwH5BLlPirHWAFWgJWYAlIBWoHlGA9EhOQBmiAW/diIIRoxP26vXmz2R34ehmD1ZGIZzShGJy5DiNlopgIUzwExkxVVbEV90H68gdfWu5Z3TcIgsW+rh83+xvoKJFJqTz1CM7qssht43nRGvNwVcqmzEaE+i1Ys2KVGJi8g31fbneQgqA7U9hPHZhHcNwxY1O/ksR0ZZjdAO41lz6XlpjO+JKoov+rcQ3axGHnNIVmpsao9vICKlBXA4DqZ/QAAAAASUVORK5CYII="/><a href="mailto:biolahaneef@gmail.com">Email</a></button>
+                                <button id="Linkedln-button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVHgBrZJhDcIwEIVfF/5TB0PCJAwlSEACOEACnQMkDAeTgANwUN6lNyBHNtqML3lrr5e+Xa8FFuLkE2NsOexQRuec66EGIZZzlr2Vcb1QW+qGTKqJsjpksjLxiaU1HPfIxBr0SOUPSA0OVKtrktvITyg/ZXDlEYLeSpS5mrxgTkwOY2x78IVsoO7UUZeGz/xPA6QjeB2FR6nBLH83qLWBNeV13mhubeI3S57yeI0B5WS/1lmehiKj7eXjMRMAAAAASUVORK5CYII="/><a href="https://www.linkedin.com/in/haneef-ojutalayo-505163285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Linkedln</a></button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="about-info">
+                        <div class="about">
+                            <h2 class="section-title">About</h2>
+                            <p class="section-content" data-testid="shortBio">I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and I'm always looking for new things to learn.</p>
+                        </div>
+                        <div class="interests">
+                            <h2 class="section-title">Interests</h2>
+                            <p class="section-content">Passionate about exploring new technology trends, especially in robotics, automation, and frontend development, I enjoy coding in Python, JavaScript and React to create efficient and user-friendly solutions. I’m committed to continuous learning in mechatronics and software development, always looking to connect with like-minded professionals and innovators who value growth and collaboration.</p>
+                        </div>
+                    </section>                
+                </div> 
+                <footer class="footer">
+                    <a href="https://x.com/hanyjay05?t=GFIfXPe7qfp_q0iAxQKlIg&s=09" target="_blank"><img class="footer-icons" data-testid="socialLinks" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHaSURBVHgB3ZVBTttAFIbfPzbJNkfwDerewJyg7QkCUpNtMpSuS1dITcWQFYIgATeAE+CcALhBuIGXCPA83pBFjJ0xBBGQ+CTL9psZ/c//87yB2T6K0Lw/AlFCbwwzn/JtrkM07gwICS0BAN9VM2wp90BLhMUhRe/Ah4lk9DyZ+PDXAj8saFXeT2ZDmJQnh+UAIH9EDoh8mzxY8Kre6F4WQqkxo2OpQAZLbVndL86vfEluadzb7Ky5TOcJSBLHWj8ReETrTko3KxkTX1HJDW9Ner86W5LxV5oumiVBOKEaFNQfubVqRQKgPcuue9nb6MZOzLLVInjmLPEqNO4SGY/K4UpNCDwxg1Gif8vnF8Tk5q5dqsUJoBKdUxO+LgosBuJ50YqIeNoz23sRvQJZ++VFIkJLNYNzM9hLaAGm86v18IkIyKRaE1oABKHxjfl+4VjZ0LsZy5jBfl/KHXsTGO6M2DcoAylbDPXmz1OvwL+DWIW4oBrqGuQ1mMYUBKlvwvD/YVsEzukZyvtEGp8dWtXY1Xrdu+ncaUor91uk+EWWeuziCbNY5VqKtdM+pYJI4i1AfVv0qA492pF00jW43RsUHQW9hk90MooBKS0VPlM5wvVpC1+KwNgi7z8AO6ukiKV+lQIAAAAASUVORK5CYII=" alt="twitter icon"></a>
+                    <a href="https://www.facebook.com/nippo.taan.1?mibextid=ZbWKwL" target="_blank"><img class="footer-icons" data-testid="socialLinks" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFhSURBVHgB7VVNTsJAFH7ftELiwvQGlhvgCeQGegU2JK50WLgVVyZGnLAUTbhCvQGeQLxBj8DKhTLzfMTwK4VSW+LCL2k6b15fvs73fgbmpheiPOqBqEY5g5kj/rDaR+nTgFCjAgDgVJX9QI0XVCBYFFK0A2Qg4dix0w6jyuzhIxGnkxTh0xYAOLK0V9fN+nDZZ9rdgWi/Mm6Lk3BsyWqtfxJsQuqTyE/2tT6L5/dMqxfQ/ntIUIFkuEr4JYl1/La8pw7sK1Ep3BS7hVxYkMncPUnpc5gmMnsJwwVpP91Jn6zLyVD6YVb7FoMFr6WB89z1xPSgjjlh/qFz/8i0EhyfNxsVSgnpk0j65GSVLze5hOAw0Uf5IUxyrMkJAtN+aE1Ni0hfNqZ5MbfdKnn8PcGBcaUFGUhI7gF1NTGcx7G8Zsn3qDrvX4e/Our/SYomkSugT4WCn5WFXx8vqBDwi4O9+AJicmq7tBfsqwAAAABJRU5ErkJggg==" alt="facebook icon"></a>
+                    <a href="https://github.com/haneefojay" target="_blank"><img class="footer-icons" data-testid="socialLinks" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ+SURBVHgBtVZdctowEN6VTdOXtO4J6t6gnKDcoOEEMTPATJ+MMmlfIU+daRKEnzIlzEBOEG5QeoJyg/oGJW9piqWunCFg4b9kwvckS6v9Vqv9VkYgiN7Ygf07j4YOPCswBFaZct5YoCZhr6JfAMqFnUCFEitVBvv/DnZHooEuyDuP7ZbkAY5dzk79lAgTgGi2nrMpUuUyBI+i/lDkwS4miDzOP4Upi6u5iRCXNaZwnJcdBtkkgX/UrmWQJMB5aybRqoKEq0cRIaopkXT0WHy9cKEA2kaXsH/c8uhznmaTkjoVRhDx2IGg0lfL30F/GMooagAyh6K415qMwjgoy+4iQI1s32gyiXad9pBckpq0t08Ds3W6bp17E3SZZf9IGFrmVm0LCyILRX94xQD9zdWt1EUAwXrvSyiN200nODWXTSKKqL3OcWXZg5Kw9uzxasw/t2baVw6RSiwig7dQEgrgvTFxk0NkbFbqBkojGaQJgwiN7q3mUBK6iJIT8DqHCBwhNnTDXgziVl+IWBInqy/xbajT6OQRkT6YFxufjQ6Yij76R813ErGuOwUkL3ih5ySqhn4GEh3EMu4rjYgh87VQ+XGTSlTWg/7okPPmVP6tDIwoHUllTFU60UI1fHQLibQDlMvYUC6hR1EPBufDa7a3vN6yZNtNNDi/7KY114xeB534JF/ac2opVcUwkEpmNswHkrPRIRVBL20t55lQE4rO9XlDX3IoTi8o99lqEKffO3RCkbWe/x5RdNRQPanghKH9J25Qm5DKoQBqq8aa56rEC4v6FR1vkRCYxUSB5te2YPSk3QBDRqKclBPlU6HifzvUQ60bkDv57Vrog2id/Qd7I/dCh4q5bAAAAABJRU5ErkJggg==" alt="gitHub icon"></a>
+                </footer>                  
+            </div>
+        </div>
+        <script src="business.js"></script>
+    </body>
+</html>
